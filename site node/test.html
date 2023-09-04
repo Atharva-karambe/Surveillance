@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Frontend Example</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.js"></script>
+</head>
+<body>
+  <script>
+    // Connect to the server
+    const socket = io('/mapp');
+
+    // Send "hi" message to the server
+    socket.emit('locationUpdate', 'hi');
+  </script>
+</body>
+</html>
